@@ -1,0 +1,67 @@
+<!--
+
+
+      APP para SPACEAPPS 19-10-2019
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Air Quality</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Estilo y menus de barra desplegable-->
+    <div class="mainPage">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <img src="img/user.png" alt="img-user" class="img-user">
+          <a href="mainPage.html">Home</a>
+          <a href="myProfile.html">My Profile</a>
+          <a href="myDataBT.html">My Data</a>
+          <a href="mapQA.html">Air Map</a>
+        </div>
+  
+
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!--Estilo y menus de barra desplegable-->
+        
+        <div class="qa-gps">
+          <p>
+            DIBUJO CARITA CONTENTA
+          </p>
+        </div>
+
+        <div class="toMap">
+          <a href="mapQA.html"> <img class="img-toMap" src="img/map.jpg"> </a>
+          <div class="txt-imgToMap">
+              <p>Opcerbation <br> <br> Map</p>
+          </div>
+        </div>
+        
+        <div class="myStationData">
+          <a href="myDataBT.html">
+            Station Data
+            </a>
+        </div>
+        
+    </div>
+    <!--Barra desplegable-->
+    <script type="text/javascript">
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "175px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    <!--Barra desplegable-->
+    
+</body>
+</html>
