@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" *ngIf="loginDone">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <span>ANEMOI</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="'/home'"> Home </a>
+            <a mat-list-item [routerLink]="'/create-account'"> My Account </a>
+            <a mat-list-item [routerLink]="'/contacts'"> Historical Data </a>
+            <a mat-list-item [routerLink]="'/create-contact'"> Air Quality Map </a>
+            <a mat-list-item (click)="sidenav.toggle()" (click)="unmakeLogin()" [routerLink]="'/login'" mat-list-item>Close</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

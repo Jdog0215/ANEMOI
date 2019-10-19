@@ -1,0 +1,21 @@
+img{
+    margin: auto;
+	width: 200px;
+	height: 200px;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    filter: invert(72%) sepia(53%) saturate(3660%) hue-rotate(84deg) brightness(100%) contrast(115%);
+}
+h2{
+    filter: invert(72%) sepia(53%) saturate(3660%) hue-rotate(84deg) brightness(100%) contrast(115%);
+}
+button{
+    margin: 1em;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
