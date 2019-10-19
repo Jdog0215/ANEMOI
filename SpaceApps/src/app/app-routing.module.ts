@@ -7,11 +7,18 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
+import { ProfileComponent } from './profile/profile/profile.component';
+import { HistDataComponent } from './histData/hist-data/hist-data.component';
+import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-quality-map.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'profile', component: ProfileComponent},
+  { path: 'hist-data', component: HistDataComponent},
+  { path: 'airQualityMap', component: AirQualityMapComponent},
+  { path: '', component: LoginComponent }
 ];
 
 @NgModule({

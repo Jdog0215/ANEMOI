@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login/login.component';
 import { HomeComponent } from './home/home/home.component';
+import { ProfileComponent } from './profile/profile/profile.component';
+import { HistDataComponent } from './histData/hist-data/hist-data.component';
+import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-quality-map.component';
 
 // @NgModule({
 //   imports: [
@@ -33,7 +36,10 @@ import { HomeComponent } from './home/home/home.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent,
+    HistDataComponent,
+    AirQualityMapComponent
   ],
   imports: [
     NgbModule,
