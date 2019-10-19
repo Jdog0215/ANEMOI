@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { WebBluetoothModule } from '@manekinekko/angular-web-bluetooth';
 
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatFormFieldModule,MatInputModule } from  '@angular/material';
-
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,22 +14,7 @@ import { HomeComponent } from './home/home/home.component';
 import { ProfileComponent } from './profile/profile/profile.component';
 import { HistDataComponent } from './histData/hist-data/hist-data.component';
 import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-quality-map.component';
-
-// @NgModule({
-//   imports: [
-//     MatInputModule,
-//     MatToolbarModule,
-//     MatSidenavModule,
-//     MatIconModule,
-//     MatListModule,
-//     MatButtonModule,
-//     MatFormFieldModule
-//   ],
-//   exports: [
-//     MatIconModule
-//   ]
-// })
-// export class MaterialModule {};
+import { BluetoothReadComponent } from './home/bluetooth-read/bluetooth-read.component';
 
 
 @NgModule({
@@ -39,7 +24,8 @@ import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-qual
     HomeComponent,
     ProfileComponent,
     HistDataComponent,
-    AirQualityMapComponent
+    AirQualityMapComponent,
+    BluetoothReadComponent
   ],
   imports: [
     NgbModule,
@@ -49,7 +35,8 @@ import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-qual
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    WebBluetoothModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
