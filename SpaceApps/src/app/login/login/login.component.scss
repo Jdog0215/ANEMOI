@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-justify: center;
+  }
+.form > input{
+    margin: auto;
+}
+img{
+    margin: auto;
+	width: 200px;
+	height: 200px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 50%;
+    border: 3px dashed black;
+}
