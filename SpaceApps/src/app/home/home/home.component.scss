@@ -4,10 +4,6 @@ img{
 	height: 200px;
     margin-top: 2em;
     margin-bottom: 0em;
-    filter: invert(72%) sepia(53%) saturate(3660%) hue-rotate(84deg) brightness(100%) contrast(115%);
-}
-h2{
-    filter: invert(72%) sepia(53%) saturate(3660%) hue-rotate(84deg) brightness(100%) contrast(115%);
 }
 button{
     margin: 1em;
@@ -18,4 +14,15 @@ button{
     justify-content: center;
     text-align: center;
   }
-
+.red{
+    filter: brightness(0) saturate(100%) invert(10%) sepia(68%) saturate(7415%) hue-rotate(349deg) brightness(113%) contrast(107%);
+}
+.green{
+    filter: invert(72%) sepia(53%) saturate(3660%) hue-rotate(84deg) brightness(100%) contrast(115%);
+}
+.yellow{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(9%) saturate(6137%) hue-rotate(328deg) brightness(123%) contrast(107%);
+}
+.transitions{
+    transition: all 2s ease-in-out;
+}
