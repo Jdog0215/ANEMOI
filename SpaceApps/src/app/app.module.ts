@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatCardModule } from  '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatCardModule,MatTableModule, MatPaginatorModule } from  '@angular/material';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +31,9 @@ import { AirQualityMapComponent } from './airQualityMap/air-quality-map/air-qual
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

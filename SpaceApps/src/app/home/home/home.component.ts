@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as SerialPort from 'serialport';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // port: any = new SerialPort("COM7", {
+  //   baudRate: 9600
+  // });
+
   constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+      // this.port.on('data',data => {
+      //   const obj = JSON.parse(data)
+      //   console.log(`Time: ${obj.time} Read: ${obj.data}`)
+      // })
+    }
 
 }
