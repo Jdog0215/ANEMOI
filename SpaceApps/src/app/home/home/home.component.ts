@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     })
   }
   ngOnDestroy(){
-    // this.subscription && this.subscription.unsubscribe();
+    this.subscription && this.subscription.unsubscribe();
   }
   changeColor(color: string){
     if(color == "green"){

@@ -1,5 +1,8 @@
 <div class="form">
-    <div class="transitions">
+    <div class="transitions" [ngClass]="{
+        'green':measure.data>3,
+        'red':measure.data<2,
+        'yellow':measure.data == 2 || measure.data == 3}">
         <img src="assets/img/air-logo.png" alt="">
     </div>
     <button mat-stroked-button>Connect</button>
