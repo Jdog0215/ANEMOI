@@ -10,21 +10,21 @@ import { interval, Subscription } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
-  // subscription: Subscription;
+  subscription: Subscription;
   measure: any;
 
   constructor(private apiService: ApiArdService) { }
 
   ngOnInit() {
-    // const source = interval(3000)
-    // this.subscription = source.subscribe(val => {
-    //   console.log(val);
-    //   this.apiService.getMeasurements().subscribe(measure => {
-    //     console.log("API CALLED. RESULT:")
-    //     console.log(measure);
-    //     this.measure = measure;
-    //   })
-    // })
+    const source = interval(3000)
+    this.subscription = source.subscribe(val => {
+      console.log(val);
+      this.apiService.getMeasurements().subscribe(measure => {
+        console.log("API CALLED. RESULT:")
+        console.log(measure);
+        this.measure = measure;
+      })
+    })
   }
   ngOnDestroy(){
     // this.subscription && this.subscription.unsubscribe();
