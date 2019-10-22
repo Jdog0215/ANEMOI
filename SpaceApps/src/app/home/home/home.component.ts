@@ -29,4 +29,13 @@ export class HomeComponent implements OnInit {
   ngOnDestroy(){
     this.subscription && this.subscription.unsubscribe();
   }
+  changeColor(color: string){
+    if(color == "green"){
+      this.measure = 5
+    }else if(color == "red"){
+      this.measure = 0
+    }else{
+      this.measure = 3
+    }
+  }
 }
