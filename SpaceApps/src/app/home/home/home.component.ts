@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiArdService } from '../../services/api-ard.service';
 import { interval, Subscription } from 'rxjs';
+import { MatSnackBar } from '@angular/material';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
   subscription: Subscription;
   measure: any;
 
-  constructor(private apiService: ApiArdService) { }
+  constructor(private apiService: ApiArdService, private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
     const source = interval(3000)
@@ -37,5 +38,11 @@ export class HomeComponent implements OnInit {
     }else{
       this.measure = 3
     }
+  }
+  openSnackBar() {
+    this._snackBar.open("Please close your windows", "Dismiss", {
+      verticalPosition: 'top',
+      politeness: 'polite'
+    });
   }
 }

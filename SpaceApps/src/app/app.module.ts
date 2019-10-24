@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatCardModule,MatTableModule, MatPaginatorModule } from  '@angular/material';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { HttpClientModule ,HttpClientJsonpModule  } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -36,7 +37,8 @@ import { ApiArdService } from './services/api-ard.service';
     MatSidenavModule,
     MatCardModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSnackBarModule
   ],
   providers: [ApiArdService],
   bootstrap: [AppComponent]

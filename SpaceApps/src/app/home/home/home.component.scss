@@ -26,3 +26,9 @@ button{
 .transitions{
     transition: all 2s ease-in-out;
 }
+.invisible {
+
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
